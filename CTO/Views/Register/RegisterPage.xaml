@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CTO.Views.Register.RegisterPage"
+             Shell.NavBarIsVisible="False">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#7209b7" Offset="0.3"></GradientStop>
+                <GradientStop Color="#4895ef" Offset="0.6"></GradientStop>
+                <GradientStop Color="#3f37c9" Offset="1.2"></GradientStop>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button  HorizontalOptions="Start" Grid.RowSpan="2" BackgroundColor="#7209b7" Clicked="Back_Clicked"  Grid.ColumnSpan="2" WidthRequest="60"/>
+            <Image  HorizontalOptions="Start" Grid.Row="1" WidthRequest="25" Source="back"/>
+        </Grid>
+        <!--Header Image-->
+        <Grid Grid.RowSpan="2" Grid.ColumnSpan="3" Margin="20">
+            <Image WidthRequest="250" Grid.ColumnSpan="3" Source="register"/>
+        </Grid>
+        <!--Login Form-->
+        <Border Grid.Row="2" Grid.Column="1" >
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10,10,10,10" />
+            </Border.StrokeShape>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <!--Login Button-->
+                <Grid Grid.Row="1" Grid.RowSpan="2" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Entry x:Name="Name" Grid.Row="1" Placeholder="Name" FontSize="20"/>
+                    <Entry x:Name="Email" Grid.Row="3" Placeholder="Email" FontSize="20"/>
+                    <Entry x:Name="PhoneNumber" Grid.Row="5" Placeholder="Phone" FontSize="20"/>
+                    <Entry x:Name="Password" Grid.Row="7" IsPassword="True" Placeholder="Password" FontSize="20" />
+                    <Button Grid.Row="10" Text="Регистрация" Clicked="Register_Clicked" HeightRequest="45" FontSize="20" BackgroundColor="CornflowerBlue"/>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CTO.Views.MainPages.Profile.ProfilePage"
+             Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#7209b7" Offset="0.3"></GradientStop>
+                <GradientStop Color="#4895ef" Offset="0.6"></GradientStop>
+                <GradientStop Color="#3f37c9" Offset="1.2"></GradientStop>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <!--Title-->
+        <Label Grid.Row="0" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" TextColor="White"  FontSize="20" Text="Профиль"/>
+        <!--Card-->
+        <Border Grid.Row="2" Grid.Column="1" BackgroundColor="White">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10,10,10,10" />
+            </Border.StrokeShape>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="1" Source="login"/>
+                <Label Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" x:Name="Name"/>
+            </Grid>
+        </Border>
+        <!--Body-->
+        <Border Grid.Row="4" Grid.Column="1" BackgroundColor="White">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10,10,10,10" />
+            </Border.StrokeShape>
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Row="0" Grid.Column="1" Source="login"/>
+                <Label Grid.Row="0" Grid.Column="3" HorizontalOptions="Start" VerticalOptions="Center" x:Name="PhoneNumber"/>
+                <Image Grid.Row="1" Grid.Column="1" Source="login"/>
+                <Label Grid.Row="1" Grid.Column="3" HorizontalOptions="Start" VerticalOptions="Center" x:Name="Email"/>
+            </Grid>
+        </Border>
+        <!--Buttons-->
+        <!--Detail-->
+        <Grid Grid.Row="6" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.RowSpan="3" Grid.ColumnSpan="4" Clicked="Edit_Clicked" BackgroundColor="{StaticResource Gray200}"/>
+            <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" Text="Редактировать данные" FontSize="16" TextColor="Blue"/>
+            <Image Grid.Row="1" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="End" Source="login"/>
+        </Grid>
+    </Grid>
+</ContentPage>
