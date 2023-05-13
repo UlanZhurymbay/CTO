@@ -5,6 +5,6 @@
              Title="LoadingPage"
              Shell.NavBarIsVisible="False" BackgroundColor="Black">
     <Grid>
-        
+        <Label Text="A" TextColor="White"/>
     </Grid>
 </ContentPage>

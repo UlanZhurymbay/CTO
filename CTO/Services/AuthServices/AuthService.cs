@@ -4,12 +4,6 @@ using CTO.Models.Data;
 using CTO.Services.PasswordServices;
 using CTO.Services.PreferenseSerivces;
 using CTO.Services.SnackbarServices;
-using Microsoft.Maui.ApplicationModel.Communication;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CTO.Services.AuthServices
 {

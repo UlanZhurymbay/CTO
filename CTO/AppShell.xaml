@@ -5,45 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:main="clr-namespace:CTO.Views.MainPages.Main"
     xmlns:register="clr-namespace:CTO.Views.Register"
-    xmlns:profile="clr-namespace:CTO.Views.MainPages.Profile"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:profile="clr-namespace:CTO.Views.MainPages.Profile">
 
-    <ShellContent
+    <ShellContent FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
         Title="Home"
         ContentTemplate="{DataTemplate register:LoadingPage}"
-        Route="LoadingPage"/>  
-    <ShellContent
+        Route="LoadingPage"/>
+    <ShellContent FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
         Title="Home"
         ContentTemplate="{DataTemplate register:LoginPage}"
         Route="LoginPage"/>
-    <!--MainPages-->
-    <TabBar     
-        Shell.TabBarBackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray600}}"
-        Shell.TabBarTitleColor ="{StaticResource Green#4caf50}">
-        <!--Main-->
-        <Tab Icon="login">
-            <ShellContent
-                ContentTemplate="{DataTemplate main:MainPage}"
-                Route="MainPage" />
-        <!--</Tab>
-        --><!--History--><!--
-        <Tab Icon="dashboard">
-            <ShellContent
-                ContentTemplate="{DataTemplate history:HistoryOrderPage}"
-                Route="HistoryOrderPage" />
-        </Tab>
-        --><!--Chat--><!--
-        <Tab Icon="about_us">
-            <ShellContent
-                ContentTemplate="{DataTemplate chat:ChatPage}"
-                Route="ChatPage" />-->
-        </Tab>
-        <!--Profile-->
-        <Tab Icon="register">
-            <ShellContent
-                ContentTemplate="{DataTemplate profile:ProfilePage}"
-                Route="ProfilePage" />
-        </Tab>
-    </TabBar>
-
 </Shell>

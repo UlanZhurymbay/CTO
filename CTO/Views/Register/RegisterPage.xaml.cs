@@ -2,6 +2,7 @@ using CommunityToolkit.Maui.Alerts;
 using CTO.Models;
 using CTO.Models.Data;
 using CTO.Services.AuthServices;
+using CTO.Services.PreferenseSerivces;
 using CTO.Services.ValidationServices;
 using CTO.Views.MainPages.Main;
 
@@ -11,9 +12,11 @@ public partial class RegisterPage : ContentPage
 {
     private readonly IAuth _auth;
     private readonly IValidation _validation;
+    private readonly IStorage _storage;
 
-    public RegisterPage(IAuth auth, IValidation validation)
+    public RegisterPage(IAuth auth, IValidation validation, IStorage storage)
 	{
+        _storage = storage;
         _validation = validation;
         _auth = auth;
         InitializeComponent();
@@ -37,6 +40,7 @@ public partial class RegisterPage : ContentPage
         {
             if (await _auth.RegisterAsync(user))
             {
+                _storage.SetUser(user);
                 await Shell.Current.GoToAsync($"///{nameof(MainPage)}");
             }
             else

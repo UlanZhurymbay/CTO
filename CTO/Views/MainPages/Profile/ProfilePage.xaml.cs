@@ -1,5 +1,6 @@
 using CTO.Models;
 using CTO.Services.PreferenseSerivces;
+using CTO.Views.Register;
 
 namespace CTO.Views.MainPages.Profile;
 
@@ -26,5 +27,10 @@ public partial class ProfilePage : ContentPage
     private async void Edit_Clicked(object sender, EventArgs e)
     {
 		await Shell.Current.GoToAsync(nameof(EditUserPage));
+    }
+
+    private async void Exit_Clicked(object sender, EventArgs e)
+    {
+		await Shell.Current.GoToAsync($"///{nameof(LoginPage)}");
     }
 }

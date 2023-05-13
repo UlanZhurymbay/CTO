@@ -20,6 +20,8 @@
             <RowDefinition Height="120"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="60"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="60"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -84,6 +86,22 @@
             </Grid.ColumnDefinitions>
             <Button Grid.RowSpan="3" Grid.ColumnSpan="4" Clicked="Edit_Clicked" BackgroundColor="{StaticResource Gray200}"/>
             <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" Text="Редактировать данные" FontSize="16" TextColor="Blue"/>
+            <Image Grid.Row="1" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="End" Source="login"/>
+        </Grid>
+        <Grid Grid.Row="8" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.RowSpan="3" Grid.ColumnSpan="4" Clicked="Exit_Clicked" BackgroundColor="{StaticResource Gray200}"/>
+            <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" Text="Выход" FontSize="16" TextColor="Blue"/>
             <Image Grid.Row="1" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="End" Source="login"/>
         </Grid>
     </Grid>
