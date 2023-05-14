@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CTO.Views.MainPages.Main;
+﻿using CTO.Views.MainPages.Main;
 using CTO.Views.MainPages.Profile;
-using Microsoft.Maui.Controls;
 
 namespace CTO.Controls
 {

@@ -12,15 +12,10 @@ public partial class MainPage : ContentPage
 		_context = context;
 		InitializeComponent();
 	}
-    protected override async void OnAppearing()
+
+    private async void Table1_Clicked(object sender, EventArgs e)
     {
-		Uuu.Text = string.Empty;
-        var users = await _context.GetAllAsync<User>();
-		foreach (var user in users)
-		{
-			Uuu.Text += user.Name + " ";
-		}
-        base.OnAppearing();
+		await Shell.Current.GoToAsync(nameof(TablePage1));
     }
 }
 

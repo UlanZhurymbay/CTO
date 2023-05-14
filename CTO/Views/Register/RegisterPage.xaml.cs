@@ -48,7 +48,13 @@ public partial class RegisterPage : ContentPage
                 Snackbar.Make("Неверное заполнение");
             }
         }
-
-
+    }
+    protected override void OnAppearing()
+    {
+        Name.Text = string.Empty;
+        PhoneNumber.Text = string.Empty;
+        Email.Text = string.Empty;
+        Password.Text = string.Empty;
+        base.OnAppearing();
     }
 }

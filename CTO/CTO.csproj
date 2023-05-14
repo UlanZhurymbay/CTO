@@ -49,19 +49,35 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\avatar.png" />
+	  <None Remove="Resources\Images\avatar_2.png" />
+	  <None Remove="Resources\Images\avatar_3.png" />
 	  <None Remove="Resources\Images\back.png" />
+	  <None Remove="Resources\Images\call.png" />
+	  <None Remove="Resources\Images\cto_1.png" />
+	  <None Remove="Resources\Images\cto_2.png" />
+	  <None Remove="Resources\Images\cto_3.png" />
+	  <None Remove="Resources\Images\cto_4.png" />
+	  <None Remove="Resources\Images\cto_5.png" />
+	  <None Remove="Resources\Images\cto_6.png" />
 	  <None Remove="Resources\Images\login.png" />
+	  <None Remove="Resources\Images\mail.png" />
 	  <None Remove="Resources\Images\register.png" />
+	  <None Remove="Resources\Images\right.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="5.1.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="7.1.2" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
 		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.4" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\MainPages\Main\TablePage1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\MainPages\Profile\EditUserPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

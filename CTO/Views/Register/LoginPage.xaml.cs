@@ -34,6 +34,12 @@ public partial class LoginPage : ContentPage
                 await Snackbar.Make("Неверное данные").Show();
             }
         }
+    }
 
+    protected override void OnAppearing()
+    {
+        Email.Text = string.Empty;
+        Password.Text = string.Empty;
+        base.OnAppearing();
     }
 }

@@ -5,7 +5,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:main="clr-namespace:CTO.Views.MainPages.Main"
     xmlns:register="clr-namespace:CTO.Views.Register"
-    xmlns:profile="clr-namespace:CTO.Views.MainPages.Profile">
+    xmlns:profile="clr-namespace:CTO.Views.MainPages.Profile" 
+    Shell.TabBarBackgroundColor="#bdbaff">
 
     <ShellContent FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
         Title="Home"

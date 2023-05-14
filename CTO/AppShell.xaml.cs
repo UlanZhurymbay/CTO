@@ -16,6 +16,8 @@ public partial class AppShell : Shell
         Routing.RegisterRoute(nameof(EditUserPage), typeof(EditUserPage));
         Routing.RegisterRoute(nameof(ProfilePage), typeof(ProfilePage));
         Routing.RegisterRoute(nameof(RegisterPage), typeof(RegisterPage));
+        //TablePages
+        Routing.RegisterRoute(nameof(TablePage1), typeof(TablePage1));
         #endregion
     }
     protected override void OnNavigating(ShellNavigatingEventArgs args)
