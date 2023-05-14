@@ -31,6 +31,7 @@ public partial class ProfilePage : ContentPage
 
     private async void Exit_Clicked(object sender, EventArgs e)
     {
+		_storage.Clear();
 		await Shell.Current.GoToAsync($"///{nameof(LoginPage)}");
     }
 }

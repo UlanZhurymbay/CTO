@@ -1,4 +1,5 @@
 using CommunityToolkit.Maui.Alerts;
+using CTO.Controls;
 using CTO.Models;
 using CTO.Models.Data;
 using CTO.Services.AuthServices;
@@ -41,7 +42,7 @@ public partial class RegisterPage : ContentPage
             if (await _auth.RegisterAsync(user))
             {
                 _storage.SetUser(user);
-                await Shell.Current.GoToAsync($"///{nameof(MainPage)}");
+                await AppConstant.AddTabBarDetails();
             }
             else
             {

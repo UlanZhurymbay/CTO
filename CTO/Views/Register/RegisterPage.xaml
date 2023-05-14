@@ -66,10 +66,10 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Entry x:Name="Name" Grid.Row="1" Placeholder="Name" FontSize="20"/>
-                    <Entry x:Name="Email" Grid.Row="3" Placeholder="Email" FontSize="20"/>
-                    <Entry x:Name="PhoneNumber" Grid.Row="5" Placeholder="Phone" FontSize="20"/>
-                    <Entry x:Name="Password" Grid.Row="7" IsPassword="True" Placeholder="Password" FontSize="20" />
+                    <Entry x:Name="Name" Grid.Row="1" TextColor="White" Placeholder="Name" FontSize="20"/>
+                    <Entry x:Name="Email" Grid.Row="3" TextColor="White" Placeholder="Email" FontSize="20"/>
+                    <Entry x:Name="PhoneNumber" Grid.Row="5" TextColor="White" Keyboard="Numeric" MaxLength="11" Placeholder="Phone" FontSize="20"/>
+                    <Entry x:Name="Password" Grid.Row="7" TextColor="White" IsPassword="True" Placeholder="Password" FontSize="20" />
                     <Button Grid.Row="10" Text="Регистрация" Clicked="Register_Clicked" HeightRequest="45" FontSize="20" BackgroundColor="CornflowerBlue"/>
                 </Grid>
             </Grid>

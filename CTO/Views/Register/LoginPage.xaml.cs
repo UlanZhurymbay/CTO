@@ -1,4 +1,5 @@
 using CommunityToolkit.Maui.Alerts;
+using CTO.Controls;
 using CTO.Services.AuthServices;
 using CTO.Services.ValidationServices;
 using CTO.Views.MainPages.Main;
@@ -27,7 +28,7 @@ public partial class LoginPage : ContentPage
         {
             if (await _auth.LoginAsync(Email.Text, Password.Text))
             {
-                await Shell.Current.GoToAsync($"///{nameof(MainPage)}");
+                await AppConstant.AddTabBarDetails();
             }
             else
             {

@@ -53,8 +53,8 @@
                         <RowDefinition Height="10"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Entry Grid.Row="1" x:Name="Email" Placeholder="Email" FontSize="20"/>
-                    <Entry Grid.Row="3" x:Name="Password" IsPassword="True" Placeholder="Password" FontSize="20"/>
+                    <Entry Grid.Row="1" x:Name="Email" TextColor="White" Placeholder="Email" FontSize="20"/>
+                    <Entry Grid.Row="3" x:Name="Password" TextColor="White" IsPassword="True" Placeholder="Password" FontSize="20"/>
                     <Button Grid.Row="5" Text="Войти" Clicked="Login_Clicked" HeightRequest="45" FontSize="20" BackgroundColor="CornflowerBlue"/>
                 </Grid>
                 <!--RegisterPage Button-->
@@ -68,7 +68,7 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Row="1" Grid.Column="0" FontSize="14" Text="У вас нет учетной?"/>
+                    <Label Grid.Row="1" Grid.Column="0" TextColor="White" FontSize="14" Text="У вас нет учетной?"/>
                     <Button Grid.Row="1" Grid.Column="1" Clicked="Register_Clicked" BackgroundColor="#4895ef"/>
                     <Label Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="1" FontSize="12" Text="Зарегистрироваться"/>
                 </Grid>

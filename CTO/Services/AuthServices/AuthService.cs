@@ -45,6 +45,7 @@ namespace CTO.Services.AuthServices
             if (user?.Password == _password.HashToString(password))
             {
                 _storage.SetUser(user);
+                Preferences.Set(nameof(User.PhoneNumber), user.PhoneNumber);
                 return true;
             }
             _snackbar.Message("Неверный логин или пароль");
