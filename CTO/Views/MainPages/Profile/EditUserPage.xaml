@@ -36,7 +36,7 @@
             <Image WidthRequest="250" Grid.ColumnSpan="3" Source="register"/>
         </Grid>
         <!--Login Form-->
-        <Border Grid.Row="3" Grid.Column="1" >
+        <Border Grid.Row="3" Grid.Column="1" BackgroundColor="Black">
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="10,10,10,10" />
             </Border.StrokeShape>

@@ -45,6 +45,11 @@ public static class MauiProgram
         builder.Services.AddTransient<EditUserPage>();
         //tablepages
         builder.Services.AddTransient<TablePage1>();
+        builder.Services.AddTransient<TablePage2>();
+        builder.Services.AddTransient<TablePage3>();
+        builder.Services.AddTransient<TablePage4>();
+        builder.Services.AddTransient<TablePage5>();
+        builder.Services.AddTransient<TablePage6>();
 
 #if DEBUG
         builder.Logging.AddDebug();
