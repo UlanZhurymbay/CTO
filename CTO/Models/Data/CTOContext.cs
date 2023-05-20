@@ -17,12 +17,13 @@ namespace CTO.Models.Data
                 return;
             Database = new SQLiteAsyncConnection(Constants.DatabasePath, Constants.Flags);
             await Database.CreateTableAsync<User>();
+            await Database.CreateTableAsync<Notification>();
         }
 
-        public async Task<List<TEntity>> GetAllAsync<TEntity>() where TEntity : class, new()
+        public async Task<List<TEntity>> GetAllAsync<TEntity>(Expression<Func<TEntity, bool>> pred) where TEntity : class, new()
         {
             await InitAsync();
-            return await Database.Table<TEntity>().ToListAsync();
+            return await Database.Table<TEntity>().Where(pred).ToListAsync();
         }
 
         public async Task<List<TEntity>> GetItemsNotDoneAsync<TEntity>(Expression<Func<TEntity, bool>> pred) where TEntity : class, new()
@@ -50,7 +51,7 @@ namespace CTO.Models.Data
             await Database.UpdateAsync(model);
         }
 
-        public async Task DeleteItemAsync<TEntity>(TEntity model) where TEntity : class, new()
+        public async Task DeleteAsync<TEntity>(TEntity model) where TEntity : class, new()
         {
             await InitAsync();
             await Database.DeleteAsync(model);

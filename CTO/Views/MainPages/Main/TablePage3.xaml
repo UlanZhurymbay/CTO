@@ -19,8 +19,7 @@
                 <RowDefinition Height="20"/>
                 <RowDefinition Height="340"/>
                 <RowDefinition Height="490"/>
-                <RowDefinition Height="600"/>
-                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="10"/>
@@ -41,9 +40,10 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="20"/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Техническое обслуживание" HorizontalOptions="Center"/>
-                <Label Grid.Row="2" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="автомобиля" HorizontalOptions="Center"/>
-                <Label Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="1" TextColor="White" Text="Техническое обслуживание автомобиля - это комплекс работ по сервисному обслуживанию и профилактике различных поломок, предписываемых авто производителем. Основная цель ТО - обеспечение надёжной и безопасной эксплуатации автомобиля. Своевременное техническое обслуживание значительно снижает Ваши затраты на топливо и содержание автомобиля, а так же продлевает срок его службы. Регулярное проведение квалифицированного технического обслуживания позволит Вам, быть уверенным на 100% в своём автомобиле."/>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Ремонт топливной" HorizontalOptions="Center"/>
+                <Label Grid.Row="2" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="системы Алматы" HorizontalOptions="Center"/>
+                <Label Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="1" TextColor="White" 
+                       Text="  Невозможно представить себе современный развитый город без автомобилей. Они нужны нам, а мы нужны им, чтобы регулярно производить диагностику и техническое обслуживание своих четырёхколёсных друзей. Автосервис в Алматы  предоставляет клиентам любые работы относительно ремонта авто и в частности ремонт топливных систем. Мы специализируемся исключительно на бензиновых двигателях. Такой узкий профиль позволил нам стать настоящими профессионалами за 10 лет работы в этой сфере. "/>
             </Grid>
             <!--Second-->
             <Grid Grid.Row="2" Grid.Column="1">
@@ -58,26 +58,22 @@
                     <RowDefinition Height="20"/>
                     <RowDefinition Height="20"/>
                     <RowDefinition Height="20"/>
-                    <RowDefinition Height="20"/>
-                    <RowDefinition Height="20"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="20"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="20"/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Цены на техническое" HorizontalOptions="Center"/>
-                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="обслуживание" HorizontalOptions="Center"/>
-                <Image Grid.Row="2" Grid.Column="1" Source="cto_1"/>
-                <Label Grid.Row="3" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена масла в двигателе 1000 тенге"/>
-                <Label Grid.Row="4" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена масла в АКПП от 6000 тенге"/>
-                <Label Grid.Row="5" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена масла в ГУР от 3000 тенге"/>
-                <Label Grid.Row="6" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена тормозной жидкости аппаратом от 4000 тенге"/>
-                <Label Grid.Row="7" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена тормозных колодок от 2000 тенге"/>
-                <Label Grid.Row="8" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена воздушного фильтра БЕСПЛАТНО"/>
-                <Label Grid.Row="9" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена салонного фильтра от 1000 тенге"/>
-                <Label Grid.Row="10" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена топливного фильтра от 3000 тенге"/>
-                <Label Grid.Row="11" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена антифриза от 4000 тенге"/>
+                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Цены на обслуживание" HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="топливной системы" HorizontalOptions="Center"/>
+                <Image Grid.Row="2" Grid.Column="1" Source="cto_2"/>
+                <Label Grid.Row="3" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена свечей зажигания от 2400 тенге"/>
+                <Label Grid.Row="4" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Чистка дроссельной заслонки от 3600 тенге"/>
+                <Label Grid.Row="5" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Чистка одной топливной форсунки от 2000 тенге (стоимость без снятия)"/>
+                <Label Grid.Row="6" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Проверка топливных форсунок на стенде от 2000 (стоимость без снятия)"/>
+                <Label Grid.Row="7" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Проверка бензонасоса на стенде 2000 тенге (стоимость без снятия )"/>
+                <Label Grid.Row="8" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Чистка волюметра от 1000 тенге"/>
+                <Label Grid.Row="9" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Экспресс чистка топливной системы аппаратом от 7000 тенге "/>
             </Grid>
             <!--Third-->
             <Grid Grid.Row="3" Grid.Column="1">
@@ -85,25 +81,17 @@
                     <RowDefinition Height="30"/>
                     <RowDefinition Height="30"/>
                     <RowDefinition Height="30"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="140"/>
-                    <RowDefinition Height="100"/>
-                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="40"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="5"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="5"/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Виды технического " HorizontalOptions="Center"/>
-                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="обслуживания" HorizontalOptions="Center"/>
-                <Label Grid.Row="3" Grid.Column="1" TextColor="White" Text="Вид технического обслуживания зависит от пробега:"/>
-                <Label Grid.Row="4" Grid.Column="1" TextColor="{StaticResource Gray100}" 
-                            Text="- ТО-1 желательно проводить после 8000-10000 км пробега. В перечень проводимых работ входит: замена моторного масла, масляного и воздушного фильтра, проверка различных узлов на мелкие неисправности, которые впоследствии могут принести большие проблемы и потребовать сложного дорогостоящего ремонта."/>
-                <Label Grid.Row="5" Grid.Column="1" TextColor="{StaticResource Gray100}" 
-                            Text="- ТО-2 делается при пробеге 16000-20000 км. В него входят все работы по ТО-1, а также дополнительные работы по диагностике ходовой части, производится осмотр двигателя и остальных узлов и агрегатов автомобиля."/>
-                <Label Grid.Row="6" Grid.Column="1" TextColor="{StaticResource Gray100}" 
-                            Text="- ТО-3 самое сложное и дорогостоящее обслуживание. В него входит ТО-2, а также замена топливного фильтра, свечей зажигания, приводных ремней, ремня ГРМ в комплекте с роликами, тормозной жидкости, компьютерная диагностика, производится проверка геометрических параметров. Производители автомобилей рекомендуют проводить ТО-3 каждые 60000-100000 км пробега автомобиля, в зависимости от условий эксплуатации."/>
+                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Особенности ремонта" HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="топливной системы" HorizontalOptions="Center"/>
+                <Label Grid.Row="3" Grid.Column="1" TextColor="White" Text="Что касается работ, связанных с ремонтом топливной системы, прежде чем приступить к конкретным работам, мы производим полноценную диагностику, выявляем конкретную неисправность и предпочитаем производить ремонт, а не безосновательную замену бензонасоса или замену свечей без проверки зажигания. Наши специалисты произведут диагностику и чистку впрыска. В самих форсунках и на близких к ним запорных клапанах в процессе эксплуатации появляются смолянистые отложения и эти клапаны не могут плотно прилегать к «сёдлам» форсунок. Вследствие этого форсунка теряет герметичность и после прекращения работы двигателя бензин будет попадать во впускной коллектор. Затем он испарится, а это в свою очередь будет затруднять процесс запуска прогретого двигателя."/>
             </Grid>
         </Grid>
     </ScrollView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CTO.Views.MainPages.Remember.CreateRememberPage"
+             Shell.NavBarIsVisible="False">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#7209b7" Offset="0.3"></GradientStop>
+                <GradientStop Color="#4895ef" Offset="0.6"></GradientStop>
+                <GradientStop Color="#3f37c9" Offset="1.2"></GradientStop>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <!--Data-->
+        <Border Grid.Row="1" Grid.Column="1" BackgroundColor="#A7CBF6">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10,10,10,10" />
+                </Border.StrokeShape>
+                <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Image x:Name="image" Grid.Row="1" Grid.Column="1"  Source="car_oil"/>
+                <Picker Grid.Row="3" Grid.Column="1" Margin="2" x:Name="picker" Title="Выбрать" SelectedIndexChanged="picker_SelectedIndexChanged" HorizontalOptions="Center">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Масло с фильтром</x:String>
+                            <x:String>ТО</x:String>
+                            <x:String>Переобувка</x:String>
+                            <x:String>Переобувка</x:String>
+                            <x:String>Фильтр кондиционера</x:String>
+                            <x:String>Воздушный фильтр двигеателя</x:String>
+                            <x:String>Тормозная жидкость</x:String>
+                            <x:String>Свечи</x:String>
+                            <x:String>Коробка передачи</x:String>
+                            <x:String>Колеса</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Entry x:Name="name" Grid.Row="4" Grid.Column="1" Placeholder="Введите текст напоминания" PlaceholderColor="Black" TextColor="Black"/>
+                <Entry x:Name="mileage" Grid.Row="6" Grid.Column="1" Placeholder="Пробег, когда напомнить (км)" Keyboard="Numeric" PlaceholderColor="Black" TextColor="Black"/>
+                <DatePicker x:Name="date" Format="dd-MM-yyyy" Grid.Row="8" Grid.Column="1" TextColor="Black"/>
+                <Entry x:Name="description" Grid.Row="10" Grid.Column="1" Placeholder="Введите текст напоминания" PlaceholderColor="Black" TextColor="Black"/>
+                <Button Grid.Row="12" Grid.Column="1" Text="Добавить" Clicked="Button_Clicked" FontSize="18"/>
+            </Grid>
+        </Border>
+    </Grid>
+</ContentPage>

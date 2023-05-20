@@ -1,5 +1,7 @@
-﻿using CTO.Views.MainPages.Main;
+﻿using CTO.Views.MainPages.Feed;
+using CTO.Views.MainPages.Main;
 using CTO.Views.MainPages.Profile;
+using CTO.Views.MainPages.Remember;
 
 namespace CTO.Controls
 {
@@ -22,6 +24,18 @@ namespace CTO.Controls
                             Icon = "register",
                             Title = "Главная",
                             ContentTemplate = new DataTemplate(typeof(MainPage)),
+                        },
+                        new ShellContent
+                        {
+                            Icon = "sale",
+                            Title = "Новости",
+                            ContentTemplate = new DataTemplate(typeof(FeedPage)),
+                        },
+                        new ShellContent
+                        {
+                            Icon = "notify",
+                            Title = "Напомнить",
+                            ContentTemplate = new DataTemplate(typeof(RememberPage)),
                         },
                         new ShellContent
                         {

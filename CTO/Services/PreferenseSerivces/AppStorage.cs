@@ -27,7 +27,7 @@ namespace CTO.Services.PreferenseSerivces
             Clear();
             Preferences.Set(nameof(User.Name), user.Name);
             Preferences.Set(nameof(User.Email), user.Email);
-            Preferences.Set(nameof(User.Id), user.Id);
+            Preferences.Set(nameof(User.Id), user.Id.ToString());
             Preferences.Set(nameof(User.PhoneNumber), user.PhoneNumber);
         }
 

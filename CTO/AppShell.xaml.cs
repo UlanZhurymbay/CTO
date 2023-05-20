@@ -1,5 +1,7 @@
-﻿using CTO.Views.MainPages.Main;
+﻿using CTO.Views.MainPages.Feed;
+using CTO.Views.MainPages.Main;
 using CTO.Views.MainPages.Profile;
+using CTO.Views.MainPages.Remember;
 using CTO.Views.Register;
 
 namespace CTO;
@@ -9,8 +11,10 @@ public partial class AppShell : Shell
 	public AppShell()
 	{
 		InitializeComponent();
-
         #region Routing
+        Routing.RegisterRoute(nameof(CreateRememberPage), typeof(CreateRememberPage));
+        Routing.RegisterRoute(nameof(RememberPage), typeof(RememberPage));
+        Routing.RegisterRoute(nameof(FeedPage), typeof(FeedPage));
         Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
         Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
         Routing.RegisterRoute(nameof(EditUserPage), typeof(EditUserPage));

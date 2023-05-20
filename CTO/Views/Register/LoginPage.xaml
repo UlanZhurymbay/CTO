@@ -61,16 +61,18 @@
                 <Grid Grid.Row="3" Grid.Column="1">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="20"/>
-                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20"/>
                         <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Row="1" Grid.Column="0" TextColor="White" FontSize="14" Text="У вас нет учетной?"/>
-                    <Button Grid.Row="1" Grid.Column="1" Clicked="Register_Clicked" BackgroundColor="#4895ef"/>
-                    <Label Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="1" FontSize="12" Text="Зарегистрироваться"/>
+                    <Label Grid.Row="1" Grid.Column="1" TextColor="White" FontSize="14" Text="У вас нет учетной?"/>
+                    <Button Grid.Row="2" Grid.Column="1" Clicked="Register_Clicked" BackgroundColor="#4895ef"/>
+                    <Label Grid.Row="2" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="12" Text="Зарегистрироваться"/>
                 </Grid>
             </Grid>
         </Border>

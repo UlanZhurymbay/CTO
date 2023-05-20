@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CTO.Views.MainPages.Feed.FeedPage"
+             Shell.NavBarIsVisible="False">
+
+    <ScrollView>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#7209b7" Offset="0.3"></GradientStop>
+                    <GradientStop Color="#4895ef" Offset="0.6"></GradientStop>
+                    <GradientStop Color="#3f37c9" Offset="1.2"></GradientStop>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="400"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="400"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <!--Title-->
+            <Label Grid.Row="0" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" TextColor="White"  FontSize="20" Text="Новости"/>
+            <!--Table_1-->
+            <Border  Grid.Row="1" Grid.Column="1"  BackgroundColor="#A7CBF6">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="25,25,25,25" />
+                </Border.StrokeShape>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="240"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.RowSpan="5" Grid.ColumnSpan="3" BackgroundColor="#A7CBF6"></Button>
+                    <Image Grid.Row="0" Grid.ColumnSpan="3" Source="freeoil" WidthRequest="300"/>
+                    <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" 
+                           FontAttributes="Bold"
+                           Text="Бесплатная замена масла в двигателе. Возможность оплаты банковскими картами, а также в рассрочку по KASPI RED при покупке моторного масла и фильтра в нашего сервиса"/>
+                </Grid>
+            </Border>
+            <!--Table_2-->
+            <Border  Grid.Row="3" Grid.Column="1"  BackgroundColor="#A7CBF6">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="25,25,25,25" />
+                </Border.StrokeShape>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="240"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.RowSpan="5" Grid.ColumnSpan="3" BackgroundColor="#A7CBF6"></Button>
+                    <Image Grid.Row="0" Grid.ColumnSpan="3" Source="freemonth" WidthRequest="300"/>
+                    <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" VerticalOptions="Center" 
+                           FontAttributes="Bold"
+                           Text="Весь май 2023 года. Акция «Бесплатная диагностика ходовой» Условия проведения АКЦИИ: Бесплатная диагностика проводится в рабочие дни с 9-00 до 10-00. Акция распространяется на автомобили не старше 2010 года выпуска."/>
+                </Grid>
+            </Border>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
