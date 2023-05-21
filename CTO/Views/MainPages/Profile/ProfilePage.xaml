@@ -65,9 +65,9 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Image Grid.Row="0" Grid.Column="1" WidthRequest="32"  Source="call"/>
-                <Label Grid.Row="0" Grid.Column="3" HorizontalOptions="Start" FontSize="18" VerticalOptions="Center" x:Name="PhoneNumber"/>
+                <Label Grid.Row="0" Grid.Column="3" TextColor="Black" HorizontalOptions="Start" FontSize="18" VerticalOptions="Center" x:Name="PhoneNumber"/>
                 <Image Grid.Row="1" Grid.Column="1" WidthRequest="32" Source="mail"/>
-                <Label Grid.Row="1" Grid.Column="3" HorizontalOptions="Start" FontSize="18" VerticalOptions="Center" x:Name="Email"/>
+                <Label Grid.Row="1" Grid.Column="3" TextColor="Black" HorizontalOptions="Start" FontSize="18" VerticalOptions="Center" x:Name="Email"/>
             </Grid>
         </Border>
         <!--Buttons-->

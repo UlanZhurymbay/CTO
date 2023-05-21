@@ -81,4 +81,12 @@ public partial class CreateRememberPage : ContentPage
 		await context.AddAsync(notification);
 		await Shell.Current.GoToAsync("..");
     }
+
+    private async void picker_Clicked(object sender, EventArgs e)
+    {
+        string text = await Shell.Current.DisplayActionSheet("Выберите", "Назад",null, list[0], list[1], list[2], list[3], list[4], list[5], list[6], list[7], list[8]);
+        name.Text = text;
+        image.Source = dic[text];
+        imageSource = dic[text];
+    }
 }

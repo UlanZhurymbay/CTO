@@ -6,7 +6,7 @@
     xmlns:main="clr-namespace:CTO.Views.MainPages.Main"
     xmlns:register="clr-namespace:CTO.Views.Register"
     xmlns:profile="clr-namespace:CTO.Views.MainPages.Profile" 
-    Shell.TabBarBackgroundColor="#bdbaff">
+    Shell.TabBarBackgroundColor="#bdbaff" Shell.TabBarTitleColor="Blue" Shell.TabBarUnselectedColor="Black">
 
     <ShellContent FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
         Title="Home"

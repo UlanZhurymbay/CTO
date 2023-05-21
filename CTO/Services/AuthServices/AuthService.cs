@@ -45,7 +45,6 @@ namespace CTO.Services.AuthServices
             if (user?.Password == _password.HashToString(password))
             {
                 _storage.SetUser(user);
-                Preferences.Set(nameof(User.PhoneNumber), user.PhoneNumber);
                 return true;
             }
             _snackbar.Message("Неверный логин или пароль");
@@ -70,6 +69,7 @@ namespace CTO.Services.AuthServices
                 Email = model.Email,
                 Password = _password.HashToString(model.Password),
                 Name = model.Name,
+                PhoneNumber = model.PhoneNumber
             };
             await _context.AddAsync(newUser);
             _storage.SetUser(newUser);

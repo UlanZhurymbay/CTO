@@ -30,7 +30,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="model:Notification">
                         <ViewCell>
-                            <Border Margin="7" Padding="5">
+                            <Border Margin="7" Padding="5" BackgroundColor="White">
                                 <Border.StrokeShape>
                                     <RoundRectangle CornerRadius="10,10,10,10" />
                                 </Border.StrokeShape>
@@ -46,7 +46,7 @@
                                     <Image Grid.Column="1" 
                                            HorizontalOptions="Center" 
                                            VerticalOptions="Center" Source="{Binding Icon}"/>
-                                    <Label Grid.Column="3" FontSize="16" VerticalOptions="Center" HorizontalTextAlignment="Center" Text="{Binding Name}"/>
+                                    <Label Grid.Column="3" FontSize="16" TextColor="Black" VerticalOptions="Center" HorizontalTextAlignment="Center" Text="{Binding Name}"/>
                                     <Grid Grid.Column="4">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="*"/>

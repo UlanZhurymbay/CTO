@@ -17,10 +17,9 @@
             </Grid.Background>
             <Grid.RowDefinitions>
                 <RowDefinition Height="20"/>
-                <RowDefinition Height="340"/>
+                <RowDefinition Height="*"/>
                 <RowDefinition Height="490"/>
-                <RowDefinition Height="600"/>
-                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="10"/>
@@ -34,16 +33,15 @@
                     <RowDefinition Height="30"/>
                     <RowDefinition Height="40"/>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="20"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="20"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="20"/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Техническое обслуживание" HorizontalOptions="Center"/>
-                <Label Grid.Row="2" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="автомобиля" HorizontalOptions="Center"/>
-                <Label Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="1" TextColor="White" Text="Техническое обслуживание автомобиля - это комплекс работ по сервисному обслуживанию и профилактике различных поломок, предписываемых авто производителем. Основная цель ТО - обеспечение надёжной и безопасной эксплуатации автомобиля. Своевременное техническое обслуживание значительно снижает Ваши затраты на топливо и содержание автомобиля, а так же продлевает срок его службы. Регулярное проведение квалифицированного технического обслуживания позволит Вам, быть уверенным на 100% в своём автомобиле."/>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Ремонт двигателя Алматы" HorizontalOptions="Center"/>
+                <Label Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="1" TextColor="White" 
+                       Text="Автосервис в Алматы  предоставляет любые услуги относительно ремонта авто и в частности ремонта двигателя. Десятилетний опыт работы позволяет нам обеспечить высокое качество работ, а также дать гарантию до 1 года.  Важное правило, которым можно пользоваться, «если машина новая, то желательно следовать указаниям в сервисной книжке по срокам ТО и отталкиваться от километража, а если машина уже эксплуатировалась другим хозяином и дату профилактических работ с двигателем не установить, то следует в ближайшее же время подъехать в автомастерскую и провести диагностику. Что касается работ, связанных с ремонтом двигателя, то наиболее распространёнными из них является периодическая замена маслосъёмных колпачков и замена цепи или ремня ГРМ. Говоря о последнем, необходимо подчеркнуть значимость этой процедуры, ведь неисправный ремень может нанести серьёзный вред самому двигателю и привести к поломке автомобиля, ведущей к капитальному ремонту двигателя."/>
             </Grid>
             <!--Second-->
             <Grid Grid.Row="2" Grid.Column="1">
@@ -58,52 +56,40 @@
                     <RowDefinition Height="20"/>
                     <RowDefinition Height="20"/>
                     <RowDefinition Height="20"/>
-                    <RowDefinition Height="20"/>
-                    <RowDefinition Height="20"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="20"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="20"/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Цены на техническое" HorizontalOptions="Center"/>
-                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="обслуживание" HorizontalOptions="Center"/>
-                <Image Grid.Row="2" Grid.Column="1" Source="cto_1"/>
-                <Label Grid.Row="3" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена масла в двигателе 1000 тенге"/>
-                <Label Grid.Row="4" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена масла в АКПП от 6000 тенге"/>
-                <Label Grid.Row="5" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена масла в ГУР от 3000 тенге"/>
-                <Label Grid.Row="6" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена тормозной жидкости аппаратом от 4000 тенге"/>
-                <Label Grid.Row="7" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена тормозных колодок от 2000 тенге"/>
-                <Label Grid.Row="8" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена воздушного фильтра БЕСПЛАТНО"/>
-                <Label Grid.Row="9" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена салонного фильтра от 1000 тенге"/>
-                <Label Grid.Row="10" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена топливного фильтра от 3000 тенге"/>
-                <Label Grid.Row="11" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена антифриза от 4000 тенге"/>
+                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Цены на ремонт ходовой " HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="части автомобиля" HorizontalOptions="Center"/>
+                <Image Grid.Row="2" Grid.Column="1" Source="cto_5"/>
+                <Label Grid.Row="3" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Капитальный ремонт двигателя от 120 000 тенге"/>
+                <Label Grid.Row="4" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена прокладки крышки головки блока цилиндров от 5000 тенге"/>
+                <Label Grid.Row="5" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена прокладки головки блока цилиндров от 55 000 тенге"/>
+                <Label Grid.Row="6" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Прокладка поддона от 6500 тенге"/>
+                <Label Grid.Row="7" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена ремня ГРМ от 15 000 тенге"/>
+                <Label Grid.Row="8" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена цепи ГРМ от 45 000 тенге"/>
+                <Label Grid.Row="9" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Проверка компрессии от 5000 тенге"/>
             </Grid>
             <!--Third-->
             <Grid Grid.Row="3" Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition Height="30"/>
-                    <RowDefinition Height="30"/>
-                    <RowDefinition Height="50"/>
-                    <RowDefinition Height="140"/>
-                    <RowDefinition Height="100"/>
-                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="5"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="5"/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Виды технического " HorizontalOptions="Center"/>
-                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="обслуживания" HorizontalOptions="Center"/>
-                <Label Grid.Row="3" Grid.Column="1" TextColor="White" Text="Вид технического обслуживания зависит от пробега:"/>
-                <Label Grid.Row="4" Grid.Column="1" TextColor="{StaticResource Gray100}" 
-                            Text="- ТО-1 желательно проводить после 8000-10000 км пробега. В перечень проводимых работ входит: замена моторного масла, масляного и воздушного фильтра, проверка различных узлов на мелкие неисправности, которые впоследствии могут принести большие проблемы и потребовать сложного дорогостоящего ремонта."/>
-                <Label Grid.Row="5" Grid.Column="1" TextColor="{StaticResource Gray100}" 
-                            Text="- ТО-2 делается при пробеге 16000-20000 км. В него входят все работы по ТО-1, а также дополнительные работы по диагностике ходовой части, производится осмотр двигателя и остальных узлов и агрегатов автомобиля."/>
-                <Label Grid.Row="6" Grid.Column="1" TextColor="{StaticResource Gray100}" 
-                            Text="- ТО-3 самое сложное и дорогостоящее обслуживание. В него входит ТО-2, а также замена топливного фильтра, свечей зажигания, приводных ремней, ремня ГРМ в комплекте с роликами, тормозной жидкости, компьютерная диагностика, производится проверка геометрических параметров. Производители автомобилей рекомендуют проводить ТО-3 каждые 60000-100000 км пробега автомобиля, в зависимости от условий эксплуатации."/>
+                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Замена ремня ГРМ" HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text=" " HorizontalOptions="Center"/>
+                <Label Grid.Row="2" Grid.Column="1" TextColor="White" 
+                       Text="Замена ремня ГРМ – это важные работа, которая требует от владельца автомобиля и мастеров особого внимания и регулярного осмотра на наличие повреждений соответствующих элементов.Главной функцией этого ремня является передача вращательного усилия от коленчатого вала к распределительному, а также поступательное усилие на водяной насос, называющийся также помпой. Первым делом нужно произвести диагностику ремня – осмотреть его на наличие повреждений и сделать вывод о необходимости замены его на более новый. Чтобы грамотно диагностировать состояние этого ремня ремень, его необходимо отсоединить. У самого основания зубцов могут быть заметны небольшие трещины. Это основной фактор для замены ремня.Очень важно вовремя заменить ремень и вообще производить любые работы с двигателем своевременно. В противном случае новые проблемы потянут за собой уже очень дорогой ремонт. Поэтому лучше предупреждать проблемы, чем устранять их последствия. В случае с ремнём, если он порвётся, то поршень может ударить по открытому клапану, погнуть его, а это уже точно капитальный ремонт двигателя. К другим работам, связанным с ремонтом двигателя, можно также отнести регулировка клапанов головки блока цилиндров, банальную замену прокладки крышки, сальников коленвала и клапанов."/>
             </Grid>
         </Grid>
     </ScrollView>

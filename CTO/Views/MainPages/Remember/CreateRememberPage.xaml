@@ -49,7 +49,8 @@
                     <ColumnDefinition Width="20"/>
                 </Grid.ColumnDefinitions>
                 <Image x:Name="image" Grid.Row="1" Grid.Column="1"  Source="car_oil"/>
-                <Picker Grid.Row="3" Grid.Column="1" Margin="2" x:Name="picker" Title="Выбрать" SelectedIndexChanged="picker_SelectedIndexChanged" HorizontalOptions="Center">
+                <Button Grid.Row="3" Grid.Column="1" Margin="2" x:Name="picker" Text="Выбрать" Clicked="picker_Clicked" TextColor="White" BackgroundColor="Blue" WidthRequest="200"/>
+                <!--<Picker Grid.Row="3" Grid.Column="1" Margin="2" x:Name="picker" Title="Выбрать" TextColor="Grey" SelectedIndexChanged="picker_SelectedIndexChanged" HorizontalOptions="Center">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
                             <x:String>Масло с фильтром</x:String>
@@ -64,7 +65,7 @@
                             <x:String>Колеса</x:String>
                         </x:Array>
                     </Picker.ItemsSource>
-                </Picker>
+                </Picker>-->
                 <Entry x:Name="name" Grid.Row="4" Grid.Column="1" Placeholder="Введите текст напоминания" PlaceholderColor="Black" TextColor="Black"/>
                 <Entry x:Name="mileage" Grid.Row="6" Grid.Column="1" Placeholder="Пробег, когда напомнить (км)" Keyboard="Numeric" PlaceholderColor="Black" TextColor="Black"/>
                 <DatePicker x:Name="date" Format="dd-MM-yyyy" Grid.Row="8" Grid.Column="1" TextColor="Black"/>

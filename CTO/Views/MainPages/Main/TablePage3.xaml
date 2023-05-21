@@ -17,9 +17,9 @@
             </Grid.Background>
             <Grid.RowDefinitions>
                 <RowDefinition Height="20"/>
-                <RowDefinition Height="340"/>
-                <RowDefinition Height="490"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="490"/>
+                <RowDefinition Height="500"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="10"/>
@@ -40,10 +40,9 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="20"/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Ремонт топливной" HorizontalOptions="Center"/>
-                <Label Grid.Row="2" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="системы Алматы" HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Диагностика автомобиля Алматы" HorizontalOptions="Center"/>
                 <Label Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="1" TextColor="White" 
-                       Text="  Невозможно представить себе современный развитый город без автомобилей. Они нужны нам, а мы нужны им, чтобы регулярно производить диагностику и техническое обслуживание своих четырёхколёсных друзей. Автосервис в Алматы  предоставляет клиентам любые работы относительно ремонта авто и в частности ремонт топливных систем. Мы специализируемся исключительно на бензиновых двигателях. Такой узкий профиль позволил нам стать настоящими профессионалами за 10 лет работы в этой сфере. "/>
+                       Text="Любые автомобили во время эксплуатации постоянно подвергаются воздействию различных факторов окружающей среды: жары, холода, влаги и воды, а также испытывают на себе нагрузки: ударные и вибрационные. Именно поэтому с некой периодичностью многие детали и узлы в системе могут изнашиваться и выходить из строя. В идеале поверхностный осмотр автомобиля на обнаружение мелких неисправностей нужно проводить перед каждым выездом, но, положа руку на сердце, следует признать, что так практически никто не делает. И если на это ещё можно закрыть глаза, то к регулярному техосмотру и обслуживанию стоит подходить более ответственно. В конце концов, даже мелкая неисправность в автомобиле может стоить на дороге очень дорого. "/>
             </Grid>
             <!--Second-->
             <Grid Grid.Row="2" Grid.Column="1">
@@ -66,14 +65,14 @@
                 </Grid.ColumnDefinitions>
                 <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Цены на обслуживание" HorizontalOptions="Center"/>
                 <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="топливной системы" HorizontalOptions="Center"/>
-                <Image Grid.Row="2" Grid.Column="1" Source="cto_2"/>
-                <Label Grid.Row="3" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена свечей зажигания от 2400 тенге"/>
-                <Label Grid.Row="4" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Чистка дроссельной заслонки от 3600 тенге"/>
-                <Label Grid.Row="5" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Чистка одной топливной форсунки от 2000 тенге (стоимость без снятия)"/>
-                <Label Grid.Row="6" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Проверка топливных форсунок на стенде от 2000 (стоимость без снятия)"/>
-                <Label Grid.Row="7" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Проверка бензонасоса на стенде 2000 тенге (стоимость без снятия )"/>
-                <Label Grid.Row="8" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Чистка волюметра от 1000 тенге"/>
-                <Label Grid.Row="9" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Экспресс чистка топливной системы аппаратом от 7000 тенге "/>
+                <Image Grid.Row="2" Grid.Column="1" Source="cto_3"/>
+                <Label Grid.Row="3" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Компьютерная диагностика 3000 тенге"/>
+                <Label Grid.Row="4" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Адаптация электронных блоков, датчиков и т.д."/>
+                <Label Grid.Row="5" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Диагностика ходовой части автомобиля 2000 тенге"/>
+                <Label Grid.Row="6" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Поисково-диагностические работы от 5000 тенге"/>
+                <Label Grid.Row="7" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Ремонт электропроводки любых видов сложности"/>
+                <Label Grid.Row="8" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Восстановление проводки после ДТП, возгорания"/>
+                <Label Grid.Row="9" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Диагностика и ремонт пневмо и гидроподвески, блоков клапанов и управления"/>
             </Grid>
             <!--Third-->
             <Grid Grid.Row="3" Grid.Column="1">
@@ -89,9 +88,10 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="5"/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Особенности ремонта" HorizontalOptions="Center"/>
-                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="топливной системы" HorizontalOptions="Center"/>
-                <Label Grid.Row="3" Grid.Column="1" TextColor="White" Text="Что касается работ, связанных с ремонтом топливной системы, прежде чем приступить к конкретным работам, мы производим полноценную диагностику, выявляем конкретную неисправность и предпочитаем производить ремонт, а не безосновательную замену бензонасоса или замену свечей без проверки зажигания. Наши специалисты произведут диагностику и чистку впрыска. В самих форсунках и на близких к ним запорных клапанах в процессе эксплуатации появляются смолянистые отложения и эти клапаны не могут плотно прилегать к «сёдлам» форсунок. Вследствие этого форсунка теряет герметичность и после прекращения работы двигателя бензин будет попадать во впускной коллектор. Затем он испарится, а это в свою очередь будет затруднять процесс запуска прогретого двигателя."/>
+                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Диагностика ходовой" HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="части Алматы" HorizontalOptions="Center"/>
+                <Label Grid.Row="3" Grid.Column="1" TextColor="White" 
+                       Text="Диагностика ходовой части- это можно так сказать ручная диагностика. Это можно считать первым диагностическим этапом, который производит мастер, полагаясь только на собственные знания и опыт. Опыт и знания по работе подвески автомобиля при движении и его имитации помогают выявить на слух симптомы отдельных неисправностей и проблем. Иногда этапа общей диагностики автомобиля достаточно, чтобы точно установить, в чём проблема, того или иного стука, скрипа. В редких случаях необходима поисковая диагностика. Для этого типа анализа неисправностей требуется использование дополнительного оборудования и техники. Техническая диагностика в этом случае производится при помощи сканеров, мотор-тестеров, других специализированных приборов и непосредственно компьютера."/>
             </Grid>
         </Grid>
     </ScrollView>
