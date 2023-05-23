@@ -36,7 +36,7 @@
             <Image WidthRequest="250" Grid.ColumnSpan="3" Source="register"/>
         </Grid>
         <!--Login Form-->
-        <Border Grid.Row="3" Grid.Column="1" >
+        <Border Grid.Row="3" Grid.Column="1" BackgroundColor="Black">
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="10,10,10,10" />
             </Border.StrokeShape>
@@ -65,9 +65,9 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Entry x:Name="Name" Grid.Row="1" Placeholder="Name" FontSize="20"/>
-                    <Entry x:Name="Email" Grid.Row="3" Placeholder="Email" FontSize="20"/>
-                    <Entry x:Name="PhoneNumber" Grid.Row="5" Placeholder="PhoneNumber" FontSize="20"/>
+                    <Entry x:Name="Name" Grid.Row="1" TextColor="White" Placeholder="Name" FontSize="20"/>
+                    <Entry x:Name="Email" Grid.Row="3" TextColor="White" Placeholder="Email" FontSize="20"/>
+                    <Entry x:Name="PhoneNumber" Grid.Row="5" TextColor="White" Keyboard="Numeric" MaxLength="11" Placeholder="Phone" FontSize="20"/>
                     <Button Grid.Row="8" Text="Сохранить" Clicked="Edit_Clicked" HeightRequest="45" FontSize="20" BackgroundColor="CornflowerBlue"/>
                 </Grid>
             </Grid>

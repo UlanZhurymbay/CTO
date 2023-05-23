@@ -12,15 +12,30 @@ public partial class MainPage : ContentPage
 		_context = context;
 		InitializeComponent();
 	}
-    protected override async void OnAppearing()
+
+    private async void Table1_Clicked(object sender, EventArgs e)
     {
-		Uuu.Text = string.Empty;
-        var users = await _context.GetAllAsync<User>();
-		foreach (var user in users)
-		{
-			Uuu.Text += user.Name + " ";
-		}
-        base.OnAppearing();
+		await Shell.Current.GoToAsync(nameof(TablePage1));
+    }
+    private async void Table2_Clicked(object sender, EventArgs e)
+    {
+		await Shell.Current.GoToAsync(nameof(TablePage2));
+    }
+    private async void Table3_Clicked(object sender, EventArgs e)
+    {
+		await Shell.Current.GoToAsync(nameof(TablePage3));
+    }
+    private async void Table4_Clicked(object sender, EventArgs e)
+    {
+		await Shell.Current.GoToAsync(nameof(TablePage4));
+    }
+    private async void Table5_Clicked(object sender, EventArgs e)
+    {
+		await Shell.Current.GoToAsync(nameof(TablePage5));
+    }
+    private async void Table6_Clicked(object sender, EventArgs e)
+    {
+		await Shell.Current.GoToAsync(nameof(TablePage6));
     }
 }
 

@@ -13,12 +13,14 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="0"/>
             <RowDefinition Height="250"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="120"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="5"/>
             <RowDefinition Height="60"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
@@ -30,7 +32,7 @@
         <!--Title-->
         <Label Grid.Row="0" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" TextColor="White"  FontSize="20" Text="Профиль"/>
         <!--Card-->
-        <Border Grid.Row="2" Grid.Column="1" BackgroundColor="White">
+        <Border Grid.Row="2" Grid.Column="1" BackgroundColor="#A7CBF6">
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="10,10,10,10" />
             </Border.StrokeShape>
@@ -42,7 +44,7 @@
                     <RowDefinition Height="60"/>
                     <RowDefinition Height="20"/>
                 </Grid.RowDefinitions>
-                <Image Grid.Row="1" Source="login"/>
+                <Image Grid.Row="1" Source="avatar_3"/>
                 <Label Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" x:Name="Name"/>
             </Grid>
         </Border>
@@ -62,14 +64,14 @@
                     <ColumnDefinition Width="20"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Image Grid.Row="0" Grid.Column="1" Source="login"/>
-                <Label Grid.Row="0" Grid.Column="3" HorizontalOptions="Start" VerticalOptions="Center" x:Name="PhoneNumber"/>
-                <Image Grid.Row="1" Grid.Column="1" Source="login"/>
-                <Label Grid.Row="1" Grid.Column="3" HorizontalOptions="Start" VerticalOptions="Center" x:Name="Email"/>
+                <Image Grid.Row="0" Grid.Column="1" WidthRequest="32"  Source="call"/>
+                <Label Grid.Row="0" Grid.Column="3" TextColor="Black" HorizontalOptions="Start" FontSize="18" VerticalOptions="Center" x:Name="PhoneNumber"/>
+                <Image Grid.Row="1" Grid.Column="1" WidthRequest="32" Source="mail"/>
+                <Label Grid.Row="1" Grid.Column="3" TextColor="Black" HorizontalOptions="Start" FontSize="18" VerticalOptions="Center" x:Name="Email"/>
             </Grid>
         </Border>
         <!--Buttons-->
-        <!--Detail-->
+        <!--Edit-->
         <Grid Grid.Row="6" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -82,9 +84,26 @@
                 <ColumnDefinition Width="30"/>
                 <ColumnDefinition Width="20"/>
             </Grid.ColumnDefinitions>
-            <Button Grid.RowSpan="3" Grid.ColumnSpan="4" Clicked="Edit_Clicked" BackgroundColor="{StaticResource Gray200}"/>
+            <Button Grid.RowSpan="3" Grid.ColumnSpan="4" Clicked="Edit_Clicked" BackgroundColor="{StaticResource Gray100}"/>
             <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" Text="Редактировать данные" FontSize="16" TextColor="Blue"/>
-            <Image Grid.Row="1" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="End" Source="login"/>
+            <Image Grid.RowSpan="3" Grid.Column="2" WidthRequest="30" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Center" Source="right"/>
+        </Grid>
+        <!--SignOut-->
+        <Grid Grid.Row="8" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.RowSpan="3" Grid.ColumnSpan="4" Clicked="Exit_Clicked" BackgroundColor="{StaticResource Gray100}"/>
+            <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" Text="Выход" FontSize="16" TextColor="Blue"/>
+            <Image Grid.RowSpan="3" Grid.Column="2" WidthRequest="30" HeightRequest="30" HorizontalOptions="Center" VerticalOptions="Center" Source="right"/>
         </Grid>
     </Grid>
 </ContentPage>

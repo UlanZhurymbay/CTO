@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CTO.Views.MainPages.Main.TablePage5"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Resources>
+        <Color x:Key="textColor">Aquamarine</Color>
+    </ContentPage.Resources>
+    <ScrollView>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#7209b7" Offset="0.3"></GradientStop>
+                    <GradientStop Color="#4895ef" Offset="0.6"></GradientStop>
+                    <GradientStop Color="#3f37c9" Offset="1.2"></GradientStop>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="490"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            <!--First-->
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Ремонт двигателя Алматы" HorizontalOptions="Center"/>
+                <Label Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="1" TextColor="White" 
+                       Text="Автосервис в Алматы  предоставляет любые услуги относительно ремонта авто и в частности ремонта двигателя. Десятилетний опыт работы позволяет нам обеспечить высокое качество работ, а также дать гарантию до 1 года.  Важное правило, которым можно пользоваться, «если машина новая, то желательно следовать указаниям в сервисной книжке по срокам ТО и отталкиваться от километража, а если машина уже эксплуатировалась другим хозяином и дату профилактических работ с двигателем не установить, то следует в ближайшее же время подъехать в автомастерскую и провести диагностику. Что касается работ, связанных с ремонтом двигателя, то наиболее распространёнными из них является периодическая замена маслосъёмных колпачков и замена цепи или ремня ГРМ. Говоря о последнем, необходимо подчеркнуть значимость этой процедуры, ведь неисправный ремень может нанести серьёзный вред самому двигателю и привести к поломке автомобиля, ведущей к капитальному ремонту двигателя."/>
+            </Grid>
+            <!--Second-->
+            <Grid Grid.Row="2" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="220"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Цены на ремонт ходовой " HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="части автомобиля" HorizontalOptions="Center"/>
+                <Image Grid.Row="2" Grid.Column="1" Source="cto_5"/>
+                <Label Grid.Row="3" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Капитальный ремонт двигателя от 120 000 тенге"/>
+                <Label Grid.Row="4" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена прокладки крышки головки блока цилиндров от 5000 тенге"/>
+                <Label Grid.Row="5" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена прокладки головки блока цилиндров от 55 000 тенге"/>
+                <Label Grid.Row="6" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Прокладка поддона от 6500 тенге"/>
+                <Label Grid.Row="7" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена ремня ГРМ от 15 000 тенге"/>
+                <Label Grid.Row="8" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена цепи ГРМ от 45 000 тенге"/>
+                <Label Grid.Row="9" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Проверка компрессии от 5000 тенге"/>
+            </Grid>
+            <!--Third-->
+            <Grid Grid.Row="3" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Замена ремня ГРМ" HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text=" " HorizontalOptions="Center"/>
+                <Label Grid.Row="2" Grid.Column="1" TextColor="White" 
+                       Text="Замена ремня ГРМ – это важные работа, которая требует от владельца автомобиля и мастеров особого внимания и регулярного осмотра на наличие повреждений соответствующих элементов.Главной функцией этого ремня является передача вращательного усилия от коленчатого вала к распределительному, а также поступательное усилие на водяной насос, называющийся также помпой. Первым делом нужно произвести диагностику ремня – осмотреть его на наличие повреждений и сделать вывод о необходимости замены его на более новый. Чтобы грамотно диагностировать состояние этого ремня ремень, его необходимо отсоединить. У самого основания зубцов могут быть заметны небольшие трещины. Это основной фактор для замены ремня.Очень важно вовремя заменить ремень и вообще производить любые работы с двигателем своевременно. В противном случае новые проблемы потянут за собой уже очень дорогой ремонт. Поэтому лучше предупреждать проблемы, чем устранять их последствия. В случае с ремнём, если он порвётся, то поршень может ударить по открытому клапану, погнуть его, а это уже точно капитальный ремонт двигателя. К другим работам, связанным с ремонтом двигателя, можно также отнести регулировка клапанов головки блока цилиндров, банальную замену прокладки крышки, сальников коленвала и клапанов."/>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>

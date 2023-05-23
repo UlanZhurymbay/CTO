@@ -1,3 +1,4 @@
+using CTO.Controls;
 using CTO.Models;
 using CTO.Services.PreferenseSerivces;
 using CTO.Views.MainPages.Main;
@@ -18,7 +19,7 @@ public partial class LoadingPage : ContentPage
 	{
         if (_storage.ContainsKey(nameof(User.Email)))
         {
-            await Shell.Current.GoToAsync($"//{nameof(ProfilePage)}");
+            await AppConstant.AddTabBarDetails();
         }
         else
         {

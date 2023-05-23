@@ -35,7 +35,7 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splash.png" Color="Blue" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -49,23 +49,75 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\avatar.png" />
+	  <None Remove="Resources\Images\avatar_2.png" />
+	  <None Remove="Resources\Images\avatar_3.png" />
 	  <None Remove="Resources\Images\back.png" />
+	  <None Remove="Resources\Images\call.png" />
+	  <None Remove="Resources\Images\car_oil.png" />
+	  <None Remove="Resources\Images\colesa.png" />
+	  <None Remove="Resources\Images\conder.png" />
+	  <None Remove="Resources\Images\corobka.png" />
+	  <None Remove="Resources\Images\cto_1.png" />
+	  <None Remove="Resources\Images\cto_2.png" />
+	  <None Remove="Resources\Images\cto_3.png" />
+	  <None Remove="Resources\Images\cto_4.png" />
+	  <None Remove="Resources\Images\cto_5.png" />
+	  <None Remove="Resources\Images\cto_6.png" />
+	  <None Remove="Resources\Images\dongelek.png" />
+	  <None Remove="Resources\Images\freemonth.png" />
+	  <None Remove="Resources\Images\freeoil.png" />
 	  <None Remove="Resources\Images\login.png" />
+	  <None Remove="Resources\Images\mail.png" />
+	  <None Remove="Resources\Images\notify.png" />
 	  <None Remove="Resources\Images\register.png" />
+	  <None Remove="Resources\Images\right.png" />
+	  <None Remove="Resources\Images\sale.png" />
+	  <None Remove="Resources\Images\svewi.png" />
+	  <None Remove="Resources\Images\to.png" />
+	  <None Remove="Resources\Images\tormoz.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="5.1.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="7.1.2" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
 		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.4" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\MainPages\Feed\FeedPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MainPages\Main\TablePage1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MainPages\Main\TablePage2.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MainPages\Main\TablePage3.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MainPages\Main\TablePage4.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MainPages\Main\TablePage5.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MainPages\Main\TablePage6.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\MainPages\Profile\EditUserPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\MainPages\Profile\ProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MainPages\Remember\CreateRememberPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\MainPages\Remember\RememberPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Register\LoadingPage.xaml">

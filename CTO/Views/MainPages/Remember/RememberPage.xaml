@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:CTO.Models"
+             x:Class="CTO.Views.MainPages.Remember.RememberPage"
+             Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#7209b7" Offset="0.3"></GradientStop>
+                <GradientStop Color="#4895ef" Offset="0.6"></GradientStop>
+                <GradientStop Color="#3f37c9" Offset="1.2"></GradientStop>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <!--Title-->
+        <Label Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" TextColor="White"  FontSize="20" Text="Напомнить"/>
+        <StackLayout Grid.Row="1" Grid.ColumnSpan="2">
+            <ListView x:Name="ListView" RowHeight="100">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Notification">
+                        <ViewCell>
+                            <Border Margin="7" Padding="5" BackgroundColor="White">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="10,10,10,10" />
+                                </Border.StrokeShape>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="10"/>
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition Width="10"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="90"/>
+                                        <ColumnDefinition Width="90"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.Column="1" 
+                                           HorizontalOptions="Center" 
+                                           VerticalOptions="Center" Source="{Binding Icon}"/>
+                                    <Label Grid.Column="3" FontSize="16" TextColor="Black" VerticalOptions="Center" HorizontalTextAlignment="Center" Text="{Binding Name}"/>
+                                    <Grid Grid.Column="4">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label VerticalOptions="Center" HorizontalTextAlignment="Center" TextColor="Green" Text="{Binding Date, StringFormat='{0:MM/dd/yyyy}'}"/>
+                                        <Label Grid.Row="1" VerticalOptions="Center" HorizontalTextAlignment="Center" TextColor="Green" Text="{Binding Mileage, StringFormat='{0}км'}"/>
+                                    </Grid>
+                                    <Button Grid.Column="5" HeightRequest="50" Text="Удалить" Clicked="Delete_Clicked" CommandParameter="{Binding Id}"/>
+                                </Grid>
+                            </Border>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <!--Footer NotifyAdd-->
+        <Border Grid.Row="2" HorizontalOptions="End" HeightRequest="60" WidthRequest="60">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="20,20,20,20" />
+            </Border.StrokeShape>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button BackgroundColor="#A7CBF6" Clicked="Create_Clicked"/>
+                <Image WidthRequest="50" Source="notify"/>
+            </Grid>
+        </Border>
+    </Grid>
+</ContentPage>

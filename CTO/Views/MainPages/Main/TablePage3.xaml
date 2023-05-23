@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CTO.Views.MainPages.Main.TablePage3"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Resources>
+        <Color x:Key="textColor">Aquamarine</Color>
+    </ContentPage.Resources>
+    <ScrollView>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#7209b7" Offset="0.3"></GradientStop>
+                    <GradientStop Color="#4895ef" Offset="0.6"></GradientStop>
+                    <GradientStop Color="#3f37c9" Offset="1.2"></GradientStop>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="490"/>
+                <RowDefinition Height="500"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            <!--First-->
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Диагностика автомобиля Алматы" HorizontalOptions="Center"/>
+                <Label Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="1" TextColor="White" 
+                       Text="Любые автомобили во время эксплуатации постоянно подвергаются воздействию различных факторов окружающей среды: жары, холода, влаги и воды, а также испытывают на себе нагрузки: ударные и вибрационные. Именно поэтому с некой периодичностью многие детали и узлы в системе могут изнашиваться и выходить из строя. В идеале поверхностный осмотр автомобиля на обнаружение мелких неисправностей нужно проводить перед каждым выездом, но, положа руку на сердце, следует признать, что так практически никто не делает. И если на это ещё можно закрыть глаза, то к регулярному техосмотру и обслуживанию стоит подходить более ответственно. В конце концов, даже мелкая неисправность в автомобиле может стоить на дороге очень дорого. "/>
+            </Grid>
+            <!--Second-->
+            <Grid Grid.Row="2" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="220"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Цены на обслуживание" HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="топливной системы" HorizontalOptions="Center"/>
+                <Image Grid.Row="2" Grid.Column="1" Source="cto_3"/>
+                <Label Grid.Row="3" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Компьютерная диагностика 3000 тенге"/>
+                <Label Grid.Row="4" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Адаптация электронных блоков, датчиков и т.д."/>
+                <Label Grid.Row="5" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Диагностика ходовой части автомобиля 2000 тенге"/>
+                <Label Grid.Row="6" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Поисково-диагностические работы от 5000 тенге"/>
+                <Label Grid.Row="7" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Ремонт электропроводки любых видов сложности"/>
+                <Label Grid.Row="8" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Восстановление проводки после ДТП, возгорания"/>
+                <Label Grid.Row="9" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Диагностика и ремонт пневмо и гидроподвески, блоков клапанов и управления"/>
+            </Grid>
+            <!--Third-->
+            <Grid Grid.Row="3" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Диагностика ходовой" HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="части Алматы" HorizontalOptions="Center"/>
+                <Label Grid.Row="3" Grid.Column="1" TextColor="White" 
+                       Text="Диагностика ходовой части- это можно так сказать ручная диагностика. Это можно считать первым диагностическим этапом, который производит мастер, полагаясь только на собственные знания и опыт. Опыт и знания по работе подвески автомобиля при движении и его имитации помогают выявить на слух симптомы отдельных неисправностей и проблем. Иногда этапа общей диагностики автомобиля достаточно, чтобы точно установить, в чём проблема, того или иного стука, скрипа. В редких случаях необходима поисковая диагностика. Для этого типа анализа неисправностей требуется использование дополнительного оборудования и техники. Техническая диагностика в этом случае производится при помощи сканеров, мотор-тестеров, других специализированных приборов и непосредственно компьютера."/>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>

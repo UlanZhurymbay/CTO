@@ -1,34 +1,190 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CTO.Views.MainPages.Main.MainPage">
+             x:Class="CTO.Views.MainPages.Main.MainPage"
+             Shell.NavBarIsVisible="False">
 
     <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
-
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                x:Name="Uuu"
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-        </VerticalStackLayout>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#7209b7" Offset="0.3"></GradientStop>
+                    <GradientStop Color="#4895ef" Offset="0.6"></GradientStop>
+                    <GradientStop Color="#3f37c9" Offset="1.2"></GradientStop>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="450"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="450"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="450"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="450"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="450"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="450"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <!--Title-->
+            <Label Grid.Row="0" Grid.ColumnSpan="3" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" TextColor="White"  FontSize="20" Text="Популярные услуги автосервиса"/>
+            <!--Table_1-->
+            <Border  Grid.Row="1" Grid.Column="1"  BackgroundColor="#A7CBF6">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="25,25,25,25" />
+                </Border.StrokeShape>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="240"/>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="85"/>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Row="0" Grid.ColumnSpan="3" Source="cto_1" WidthRequest="300"/>
+                    <Label Grid.Row="1" Grid.Column="1" FontAttributes="Bold" FontSize="20" Text="Техническое обслуживание автомобиля"/>
+                    <Label Grid.Row="2" Grid.Column="1" Text="ТО - это комплекс работ по сервисному обслуживанию и профилактике различных поломок. А также работы по замене масла в узлах и агрегатах."/>
+                    <Button Grid.Row="3" Grid.Column="1" FontSize="16" Clicked="Table1_Clicked" Text="Подробнее" BackgroundColor="Blue"/>
+                </Grid>
+            </Border>
+            <!--Table_2-->
+            <Border  Grid.Row="3" Grid.Column="1"  BackgroundColor="#A7CBF6">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="25,25,25,25" />
+                </Border.StrokeShape>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="240"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Row="0" Grid.ColumnSpan="3" Source="cto_2" WidthRequest="300"/>
+                    <Label Grid.Row="1" Grid.Column="1" FontSize="20" Text="Ремонт топливной системы" FontAttributes="Bold"/>
+                    <Label Grid.Row="2" Grid.Column="1" 
+                           Text="Работа топливной системы напрямую связана с качеством топлива. Регулярная замена фильтров и промывка впрыска, могут значительно сократить расход бензина и сэкомномить финансы."/>
+                    <Button Grid.Row="3" Grid.Column="1" FontSize="16" Clicked="Table2_Clicked" Text="Подробнее" BackgroundColor="Blue"/>
+                </Grid>
+            </Border>
+            <!--Table_3-->
+            <Border  Grid.Row="5" Grid.Column="1"  BackgroundColor="#A7CBF6">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="25,25,25,25" />
+                </Border.StrokeShape>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="240"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="105"/>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Row="0" Grid.ColumnSpan="3" Source="cto_3" WidthRequest="300"/>
+                    <Label Grid.Row="1" Grid.Column="1" FontSize="20" Text="Диагностика автомобиля" FontAttributes="Bold"/>
+                    <Label Grid.Row="2" Grid.Column="1" 
+                           Text="Компьютерная диагностика двигателя автомобиля в нашем автосервисе производится с использованием современного диагностического оборудования"/>
+                    <Button Grid.Row="3" Grid.Column="1" FontSize="16" Clicked="Table3_Clicked" Text="Подробнее" BackgroundColor="Blue"/>
+                </Grid>
+            </Border>
+            <!--Table_4-->
+            <Border  Grid.Row="7" Grid.Column="1"  BackgroundColor="#A7CBF6">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="25,25,25,25" />
+                </Border.StrokeShape>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="240"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Row="0" Grid.ColumnSpan="3" Source="cto_4" WidthRequest="300"/>
+                    <Label Grid.Row="1" Grid.Column="1" FontSize="20" Text="Диагностика автомобиля" FontAttributes="Bold"/>
+                    <Label Grid.Row="2" Grid.Column="1" 
+                           Text="Ходовая часть является важной системой автомобиля, неисправность которой снижает безопасность водителя и пассажиров."/>
+                    <Button Grid.Row="3" Grid.Column="1" FontSize="16" Clicked="Table4_Clicked" Text="Подробнее" BackgroundColor="Blue"/>
+                </Grid>
+            </Border>
+            <!--Table_5-->
+            <Border  Grid.Row="9" Grid.Column="1"  BackgroundColor="#A7CBF6">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="25,25,25,25" />
+                </Border.StrokeShape>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="240"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Row="0" Grid.ColumnSpan="3" Source="cto_5" WidthRequest="300"/>
+                    <Label Grid.Row="1" Grid.Column="1" FontSize="20" Text="Ремонт двигателя" FontAttributes="Bold"/>
+                    <Label Grid.Row="2" Grid.Column="1" 
+                           Text="Ремонт двигателя можно назвать одной из самых сложных процедур, по ремонту автомобиля. Такой ремонт нужно доверять только профессионалам."/>
+                    <Button Grid.Row="3" Grid.Column="1" FontSize="16" Clicked="Table5_Clicked" Text="Подробнее" BackgroundColor="Blue"/>
+                </Grid>
+            </Border>
+            <!--Table_6-->
+            <Border  Grid.Row="11" Grid.Column="1"  BackgroundColor="#A7CBF6">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="25,25,25,25" />
+                </Border.StrokeShape>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="240"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Row="0" Grid.ColumnSpan="3" Source="cto_6" WidthRequest="300"/>
+                    <Label Grid.Row="1" Grid.Column="1" FontSize="20" Text="Геометрия колёс" FontAttributes="Bold"/>
+                    <Label Grid.Row="2" Grid.Column="1" 
+                           Text="Регулировка развал-схождения на высокоточном 3D-стенде John Bean- гарантия Вашей безопасности "/>
+                    <Button Grid.Row="3" Grid.Column="1" FontSize="16" Clicked="Table6_Clicked" Text="Подробнее" BackgroundColor="Blue"/>
+                </Grid>
+            </Border>
+        </Grid>
     </ScrollView>
 
 </ContentPage>

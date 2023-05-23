@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CTO.Views.MainPages.Main.TablePage4"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Resources>
+        <Color x:Key="textColor">Aquamarine</Color>
+    </ContentPage.Resources>
+    <ScrollView>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#7209b7" Offset="0.3"></GradientStop>
+                    <GradientStop Color="#4895ef" Offset="0.6"></GradientStop>
+                    <GradientStop Color="#3f37c9" Offset="1.2"></GradientStop>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="490"/>
+                <RowDefinition Height="490"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            <!--First-->
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Ремонт ходовой части Алматы" HorizontalOptions="Center"/>
+                <Label Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="1" TextColor="White" 
+                       Text=" Современные автомобили отличается особенно сложным внутренним устройством. Если раньше можно было самостоятельно заниматься ремонтом, то теперь не обойтись без помощи профессиональных профильных специалистов.  Каждый автомобиль имеет свойство ломаться и нуждается в периодическом осмотре, а при необходимости ремонте или замене вышедших из строя деталей и узлов. Ходовая часть автомобиля в нашей стране невероятно уязвима, поэтому. Автосервис в Алматы » предоставляет полный спектр услуг относительно ремонта авто и в частности ремонта ходовой отечественных и зарубежных автомобилей. С проблемами, возникающими в ходовой ни в коем случае не стоит тянуть. Следует понимать, что эти проблемы в ходовой со временем накапливаются и становятся снежным комом."/>
+            </Grid>
+            <!--Second-->
+            <Grid Grid.Row="2" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="220"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Цены на ремонт ходовой " HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="части автомобиля" HorizontalOptions="Center"/>
+                <Image Grid.Row="2" Grid.Column="1" Source="cto_4"/>
+                <Label Grid.Row="3" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Диагностика ходовой части автомобиля 2000 тенге"/>
+                <Label Grid.Row="4" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена амортизатора от 2400 тенге"/>
+                <Label Grid.Row="5" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена рулевого наконечника от 2400 тенге"/>
+                <Label Grid.Row="6" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена стойки стабилизатора от 900 тенге"/>
+                <Label Grid.Row="7" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена втулки стабилизатора от 900 тенге"/>
+                <Label Grid.Row="8" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена тормозных колодок от 1500 тенге"/>
+                <Label Grid.Row="9" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Замена тормозных дисков от 3600 тенге"/>
+            </Grid>
+            <!--Third-->
+            <Grid Grid.Row="3" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Замена амортизаторов и " HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="деталей подвески" HorizontalOptions="Center"/>
+                <Label Grid.Row="3" Grid.Column="1" TextColor="White" 
+                       Text="Наши профессиональные специалисты произведут все работы: по замена амортизаторов, пружин и других составляющих частей этой системы. Порой износ ходовой часто приводит к необходимости не ремонта, а замены подшипников, опор, рулевых тяг или наконечников, и даже замены шаровой опоры.Если вам необходим ремонт ходовой, закажите эту услугу в автосервисе в Алматы «BEST SERVICE», и вы можете быть уверенными в качестве и скорости выполнения работ."/>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>

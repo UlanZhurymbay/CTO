@@ -5,8 +5,10 @@ using CTO.Services.PasswordServices;
 using CTO.Services.PreferenseSerivces;
 using CTO.Services.SnackbarServices;
 using CTO.Services.ValidationServices;
+using CTO.Views.MainPages.Feed;
 using CTO.Views.MainPages.Main;
 using CTO.Views.MainPages.Profile;
+using CTO.Views.MainPages.Remember;
 using CTO.Views.Register;
 using Microsoft.Extensions.Logging;
 
@@ -37,12 +39,22 @@ public static class MauiProgram
 		builder.Services.AddTransient<IAuth, AuthService>();
 
 		//views
+        builder.Services.AddTransient<CreateRememberPage>();
+        builder.Services.AddTransient<RememberPage>();
+        builder.Services.AddTransient<FeedPage>();
         builder.Services.AddTransient<ProfilePage>();
         builder.Services.AddTransient<MainPage>();
         builder.Services.AddTransient<LoadingPage>();
         builder.Services.AddTransient<LoginPage>();
         builder.Services.AddTransient<RegisterPage>();
         builder.Services.AddTransient<EditUserPage>();
+        //tablepages
+        builder.Services.AddTransient<TablePage1>();
+        builder.Services.AddTransient<TablePage2>();
+        builder.Services.AddTransient<TablePage3>();
+        builder.Services.AddTransient<TablePage4>();
+        builder.Services.AddTransient<TablePage5>();
+        builder.Services.AddTransient<TablePage6>();
 
 #if DEBUG
         builder.Logging.AddDebug();

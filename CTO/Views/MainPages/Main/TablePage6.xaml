@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CTO.Views.MainPages.Main.TablePage6"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Resources>
+        <Color x:Key="textColor">Aquamarine</Color>
+    </ContentPage.Resources>
+    <ScrollView>
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#7209b7" Offset="0.3"></GradientStop>
+                    <GradientStop Color="#4895ef" Offset="0.6"></GradientStop>
+                    <GradientStop Color="#3f37c9" Offset="1.2"></GradientStop>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="490"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            <!--First-->
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Развал-схождение колес Алматы" HorizontalOptions="Center"/>
+                <Label Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="1" TextColor="White" 
+                       Text=" Любой автомобиль вне зависимости от марки и надёжности в процессе эксплуатации нуждается в периодическом осмотре, регулировке и отладке некоторых узлов и элементов. Необходимость регулировки развала-схождения колёс может быть продиктована многими факторами, среди которых замена амортизаторов, опор, пружин, старых покрышек на новые или же просто летней резины на зимнюю и наоборот. Однако помимо этого есть менее явные причины.  Многие автолюбители пренебрегают своевременной настройкой развала/схождения, а иногда и вовсе никогда не производят её. В свою очередь это к ряду негативных последствий.  Неправильная или сбитая геометрия колёс в первую очередь приводит к ухудшению управляемости и устойчивости автомобиля на дороге. В свою очередь это влияет на безопасность вождения, особенно в случаях возникновения на дороге аварийных ситуаций, в частности машина с плохо отрегулированными колёсными углами обладает пониженной склонностью к амортизации и переворачиванию в экстремальных условиях. Также обнаружение резкого изменения расхода топлива тоже может быть предпосылкой для осмотра правильности установки углов колёс. "/>
+            </Grid>
+            <!--Second-->
+            <Grid Grid.Row="2" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="220"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="Цены на ремонт ходовой " HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="22" TextColor="White" Text="части автомобиля" HorizontalOptions="Center"/>
+                <Image Grid.Row="2" Grid.Column="1" Source="cto_6"/>
+                <Label Grid.Row="3" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Проверка геометрических параметров- 2000 тенге"/>
+                <Label Grid.Row="4" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Регулировка развал-схождения на переднюю ось- от 3000 тенге"/>
+                <Label Grid.Row="5" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Регулировка развал-схождения две оси- от 5000 тенге"/>
+                <Label Grid.Row="6" Grid.Column="1" TextColor="{StaticResource textColor}" Text="- Установка шайб, пластин, проставок- от 3000 тенге"/>
+            </Grid>
+        </Grid>
+    </ScrollView>
+</ContentPage>

@@ -5,12 +5,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace CTO.Services.ValidationServices
 {
     public class ValidationService : IValidation
     {
+        private const string ValidEmailPattern = "^\\S+@\\S+\\.\\S+$";
         private readonly ISnackbar _snackbar;
 
         public ValidationService(ISnackbar snackbar)
@@ -49,6 +51,12 @@ namespace CTO.Services.ValidationServices
                 _snackbar.Message("Неверный email");
                 return false;
             }
+            var result = new Regex(ValidEmailPattern, RegexOptions.IgnoreCase).IsMatch(user.Email);
+            if (!result)
+            {
+                _snackbar.Message("Неверный email");
+                return false;
+            }
             if (string.IsNullOrEmpty(user.Name))
             {
                 _snackbar.Message("Неверный имя");
@@ -59,11 +67,20 @@ namespace CTO.Services.ValidationServices
                 _snackbar.Message("Неверный phone");
                 return false;
             }
+
+
             return true;
         }
         public bool CheckEmailAndPassword(string email, string password)
         {
+
             if (string.IsNullOrEmpty(email))
+            {
+                _snackbar.Message("Неверный email");
+                return false;
+            }
+            var result = new Regex(ValidEmailPattern, RegexOptions.IgnoreCase).IsMatch(email);
+            if (!result)
             {
                 _snackbar.Message("Неверный email");
                 return false;

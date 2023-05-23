@@ -1,8 +1,11 @@
-﻿namespace CTO;
+﻿using CTO.Models;
+
+namespace CTO;
 
 public partial class App : Application
 {
-	public App()
+    public static List<Notification> List = new();
+    public App()
 	{
 		Current.UserAppTheme = AppTheme.Light;
         InitializeComponent();
